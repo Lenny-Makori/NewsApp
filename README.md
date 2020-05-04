@@ -1,4 +1,4 @@
-# Password Locker
+# NewsApp
 
 By **Lenny Makori**
 
@@ -16,19 +16,16 @@ The program is not visually appealling but it will be worked on very soon.
 ## Behaviour Driven Development
 | Behaviour  | Input | Output |
 | ------------- | ------------- | ------------- |
-| Select a source  | The user can select a specific source on the navigation bar. | After submitting the user details, the user is logged in and now can be able to access the password locker features|
-| Add an existing account  | The user can choose to add credentials of an existing account's and is prompted to key the credentials | The crdentials of the account is saved and user is prompted to choose what other feature he/she would like to use.  |
-| Display accounts | The user can choose to view all the added accounts | All the added accounts get displayed for the user. |
-| Delete an account | The user can choose to delete an account and is prompted to enter the name of the account to be deleted. | The account gets deleted from the program.|
-| Exit the program | The user can choose to exit the program. | The program gets closed. |
-|||
+| Select a source  | The user can select a specific source on the navigation bar. | On clicking a specific category on the navigation bar, the user gets to see the sources of the specified category. |
+| Viewing an  article.  | The user can click on the `view article` link. | On clicking the link, the user gets to navigate to the page of the clicked article.  |
+| View full article | The user can choose to view the full article | On clicking the `view full article`, the user gets redirected to the url of the article. |
 
 ## Technologies Used
 This page was created using: 
 * Python
 
 ## Support and contact details
-In case you encounter any  troubles in installing the application, contact me on makorilenny28@gmail.com.
+In case you encounter any  troubles in installing the application, contact me on *makorilenny28@gmail.com*.
 
 
 ### License
