@@ -1,0 +1,64 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
+<!-- Styles block -->
+
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
+
+<!-- Content block -->
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div id="science" class="col-md-4">
+            <!-- Science News -->
+            <h3> Science News</h3>
+            <ul>
+                {{ macro.displaySource(science)}}
+            </ul>
+        </div>
+        <div id="sports" class="col-md-4">
+            <!-- Sports News -->
+            <h3> Sports News</h3>
+            <ul>
+                {{ macro.displaySource(sports)}}
+            </ul>
+        </div>
+        <div id="health" class="col-md-4">
+            <!-- Health News -->
+            <h3> Health News</h3>
+            <ul>
+                {{ macro.displaySource(health)}}
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div id="business" class="col-md-4">
+            <!-- Business News -->
+            <h3> Business News</h3>
+            <ul>
+                {{ macro.displaySource(business)}}
+            </ul>
+            </div>
+            <div id="general" class="col-md-4">
+            <!-- General News -->
+            <h3> General News</h3>
+            <ul>
+                {{ macro.displaySource(general)}}
+            </ul>
+        </div>
+        <div id="technology" class="col-md-4">
+            <!-- Technology News -->
+        <h3> Technology News</h3>
+        <ul>
+            {{ macro.displaySource(technology)}}
+        </ul>
+        </div>
+        
+    </div>
+</div>
+        
+{% endblock %}
