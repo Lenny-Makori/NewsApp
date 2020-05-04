@@ -21,3 +21,7 @@ def index():
     title="Home-Welcome to NEWS sources Website"
     return render_template('index.html', entertainment = entertainment, business = business, general = general, health = health, science = science, sports =sports, technology = technology, title = title)
 
+@app.route('/source/<id>')
+def get_articles(id):
+    articles = get_article(id)
+    return render_template('articles.html', articles = articles)
